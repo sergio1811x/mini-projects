@@ -1,5 +1,6 @@
 import './index.scss';
 import { useState } from 'react';
+import {Link} from "react-router-dom";
 
 const questions = [
   {
@@ -28,9 +29,9 @@ function Result({ correct }) {
     <div className="result">
       <img src="https://cdn-icons-png.flaticon.com/512/2278/2278992.png" />
       <h2>Вы отгадали {correct} ответа из 3</h2>
-      <a href={'/'}>
+      <Link to={'/'}>
         <button>На главную</button>
-      </a>
+      </Link>
     </div>
   );
 }
